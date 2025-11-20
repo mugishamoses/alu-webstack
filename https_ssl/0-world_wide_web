@@ -23,4 +23,3 @@ else
         check_subdomain "$sub"
     done
 fi
-
