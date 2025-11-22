@@ -41,7 +41,7 @@ frontend www-http
 	redirect scheme https code 301 if !{ ssl_fc }
 
 frontend www-https
-	bind *:443 ssl crt /etc/haproxy/certs/www.mosesmugisha.tech.pem
+	bind *:443 ssl crt /etc/haproxy/certs/mosesmugisha.tech.pem
 	mode http
 	option forwardfor
 	http-request set-header X-Forwarded-Proto https
